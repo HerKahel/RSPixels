@@ -213,6 +213,358 @@ a{
 }
 
 /* =====================
+   SERVICES
+===================== */
+
+.services {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    padding: 80px 8%;
+}
+
+.services-content {
+
+    text-align: center;
+
+    width: 100%;
+
+    max-width: 700px;
+
+    margin-bottom: 30px;
+
+}
+
+.services-content h2,
+.products-content h2 {
+
+    color: #0D47A1;
+
+    margin-bottom: 20px;
+}
+
+.services-content p,
+.products-content p {
+
+    margin-top: 10px;
+
+    line-height: 1.8;
+}
+
+.slider-wrap {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    width:100%;
+
+    max-width:980px;
+
+}
+
+.slider-track {
+
+    display:flex;
+
+    gap:20px;
+
+    overflow-x:auto;
+
+    scroll-behavior:smooth;
+
+    scrollbar-width:none;
+
+    -ms-overflow-style:none;
+
+    flex:1;
+
+    padding:6px 2px 10px;
+
+}
+
+.slider-track::-webkit-scrollbar {
+
+    display:none;
+
+}
+
+.slider-image {
+
+    width:220px;
+
+    min-width:220px;
+
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:16px;
+
+    box-shadow:0 10px 20px rgba(13,71,161,0.08);
+
+}
+
+.slider-arrow {
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#0D47A1;
+
+    color:#fff;
+
+    font-size:32px;
+
+    line-height:1;
+
+    cursor:pointer;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-shrink:0;
+
+}
+
+/* =====================
+    PRODUCTS
+===================== */
+
+.products {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    padding: 80px 8%;
+}
+
+.products-content {
+
+    text-align: center;
+
+    width: 100%;
+
+    max-width: 700px;
+
+    margin-bottom: 30px;
+
+}
+
+/* =====================
+    PORTFOLIO
+===================== */
+
+.portfolio-section{
+
+    padding:70px 8% 40px;
+
+    background:#F5F7FA;
+
+}
+
+.portfolio-header{
+
+    text-align:center;
+
+    max-width:760px;
+
+    margin:0 auto 35px;
+
+}
+
+.portfolio-header h2{
+
+    color: #0D47A1;
+
+    margin-bottom: 20px;
+
+}
+
+.portfolio-header p{
+
+    margin-top: 10px;
+
+    line-height: 1.8;
+
+}
+
+.portfolio-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2, minmax(300px, 1fr));
+
+    gap:30px 35px;
+
+    max-width:1100px;
+
+    margin:0 auto;
+
+}
+
+.portfolio-card{
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    min-height:280px;
+
+    padding:26px 26px 18px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-end;
+
+    border:1px solid rgba(13,71,161,0.08);
+
+    box-shadow:0 10px 25px rgba(13,71,161,0.06);
+
+}
+
+.portfolio-copy{
+
+    width:55%;
+
+    padding-bottom:16px;
+
+}
+
+.tagline{
+
+    display:block;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    color:#0D47A1;
+
+    margin-bottom:18px;
+
+}
+
+.portfolio-copy h3{
+
+    font-size:28px;
+
+    line-height:1.2;
+
+    color:#22304a;
+
+    font-weight:500;
+
+}
+
+/* =====================
+    PORTFOLIO PREVIEW
+===================== */
+
+.portfolio-preview{
+
+    width:40%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding-bottom:14px;
+
+}
+
+.portfolio-preview .preview-illustration{
+
+    position:relative;
+
+    width:150px;
+
+    height:100px;
+
+    background:rgba(13,71,161,0.08);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+.portfolio-thumb{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.portfolio-preview.right-preview .preview-illustration{
+
+    transform:translateY(18px);
+
+}
+
+.work-arrows{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:30px;
+
+    margin-top:28px;
+
+}
+
+.work-arrows button{
+
+    width:46px;
+
+    height:46px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:transparent;
+
+    color:#0D47A1;
+
+    font-size:44px;
+
+    line-height:1;
+
+    cursor:pointer;
+
+}
+
+/* =====================
    RESPONSIVE
 ===================== */
 
@@ -272,4 +624,49 @@ a{
 
     }
 
+    .services{
+
+        justify-content:center;
+
+        text-align:center;
+
+    }
+
+    .slider-wrap{
+
+        gap:10px;
+
+    }
+
+    .slider-image{
+
+        width:180px;
+
+        min-width:180px;
+
+        height:150px;
+
+    }
+
+    .portfolio-jumbotron-content h1{
+
+        font-size:36px;
+
+    }
+
+    .portfolio-jumbotron-visual{
+
+        grid-template-columns:1fr;
+
+        width:100%;
+
+    }
+
+    .card-two{
+
+        transform:none;
+
+    }
+
 }
+
